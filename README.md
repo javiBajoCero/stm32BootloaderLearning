@@ -12,3 +12,23 @@ On the other hand STM32F446RETx has canbus capabilities and its native bootloade
 ![Screenshot](images/bootmode_capture.PNG)
 https://www.youtube.com/watch?v=3brOzLJmeek&ab_channel=EmbeddedSystemswithARMCortex-MMicrocontrollersinAssemblyLanguageandC
   
+
+# sources of reset  
+http://www.micromouseonline.com/2012/03/29/stm32-reset-source/  
+In the RCC_CSR register, the bits to look for are:
+
+    Bit31: LPWRRSTF – Low-power reset flag  
+    Set by hardware when a Low-power management reset occurs.  
+    Bit30: WWDGRSTF – Window watchdog reset flag  
+    Set by hardware when a window watchdog reset occurs.  
+    Bit29: IWDGRSTF – Independent watchdog reset flag  
+    Set by hardware when an independent watchdog reset from VDD domain occurs.  
+    Bit28: SFTRSTF – Software reset flag  
+    Set by hardware when a software reset occurs.  
+    Bit27: PORRSTF – POR/PDR reset flag  
+    Set by hardware when a POR/PDR reset occurs.  
+    Bit26: PINRSTF – PIN reset flag  
+    Set by hardware when a reset from the NRST pin occurs.  
+    Bit25: BORRSTF – BOR reset flag  
+    Set by hardware when a POR/PDR or BOR reset occurs.  
+
