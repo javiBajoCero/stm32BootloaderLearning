@@ -30,5 +30,9 @@ In the RCC_CSR register, the bits to look for are:
     Bit26: PINRSTF – PIN reset flag  
     Set by hardware when a reset from the NRST pin occurs.  
     Bit25: BORRSTF – BOR reset flag  
-    Set by hardware when a POR/PDR or BOR reset occurs.  
+    Set by hardware when a POR/PDR or BOR reset occurs.   
 
+# UUID  
+![Screenshot](images/UUID.png)
+uart bootloader polling of the UUID  
+http://blog.gorski.pm/stm32-unique-id  
