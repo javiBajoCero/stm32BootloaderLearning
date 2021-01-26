@@ -32,7 +32,11 @@ In the RCC_CSR register, the bits to look for are:
     Bit25: BORRSTF – BOR reset flag  
     Set by hardware when a POR/PDR or BOR reset occurs.   
 
-# UUID  
+# UART BOOTLOADER UUID  
 ![Screenshot](images/UUID.png)
 uart bootloader polling of the UUID  
 http://blog.gorski.pm/stm32-unique-id  
+  
+# canbus bootloader
+![Screenshot](images/canbootloader.png) 
+  
